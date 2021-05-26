@@ -43,7 +43,7 @@ function collectInfo(e){
     console.log(name,email,message)
     if(hidden.length==0){
         saveContactInfo(name,email,message)
-//         sendEmail(name,email,message)        
+        sendEmail(name,email,message)        
     }
     document.querySelector("#fs-frm").reset()
 }
