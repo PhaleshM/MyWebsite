@@ -57,7 +57,6 @@ function saveContactInfo(name,email,message){
     })
 }
 
-<<<<<<< HEAD
 function sendEmail(name,email,message){
     Email.send({
         // Host : "smtp.gmail.com",
@@ -72,19 +71,3 @@ function sendEmail(name,email,message){
       message => alert(message)
     );
 }
-=======
-// function sendEmail(name,email,message){
-//     Email.send({
-//         Host : "smtp.gmail.com",
-//         Username : "sphinkegypt@gmail.com",
-//         Password : "bujkastetcvsretq",
-//         // SecureToken:'4554691b-786d-4c4c-845d-80a6f10b615b',
-//         To : 'phaleshm@gmail.com',
-//         From : "sphinkegypt@gmail.com",
-//         Subject : "This is the subject",
-//         Body : "And this  is the body"
-//     }).then(
-//       message => alert(message)
-//     );
-// }
->>>>>>> f343b709c8d3d802c5f3bc1510ad26beb7ed1bf4
