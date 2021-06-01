@@ -22,12 +22,8 @@ menu.addEventListener("click",overMenu)
 meIt.addEventListener("click",overMenu)
 
 function overMenu(){
-    let dspl=overmenu.style.display
-    if(dspl=="" || dspl=="none"){
-        overmenu.style.display="initial"
-    }else{
-        overmenu.style.display="none"
-    }
+    var isOpen = overmenu.id==='slide-in'
+    overmenu.setAttribute('id', isOpen ? 'slide-out' : 'slide-in');
 }
 
 
