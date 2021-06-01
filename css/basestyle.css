@@ -7,6 +7,7 @@ body{
     overflow-y: visible;
 }
 header{
+    position: sticky;
     padding: 20px 10%;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
@@ -72,7 +73,7 @@ p{
     padding: 5px 40px;
 }
 .over-opt a{
-    font-size: 22px;
+    font-size: 35px;
     display: block;
     z-index: 1001;
 }
