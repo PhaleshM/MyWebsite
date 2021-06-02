@@ -55,10 +55,10 @@ function saveContactInfo(name,email,message){
 
 function sendEmail(name,email,message){
     Email.send({
-        // Host : "smtp.gmail.com",
-        // Username : "sphinkegypt@gmail.com",
-        // Password : "rdrauotfbpkntcwa",
-        SecureToken:'3e359ebc-302b-4749-abbf-b4100855ab94',
+         Host : "smtp.gmail.com",
+         Username : "sphinkegypt@gmail.com",
+         Password : "rdrauotfbpkntcwa",
+        // SecureToken:'3e359ebc-302b-4749-abbf-b4100855ab94',
         To : 'phaleshm@gmail.com',
         From : email,
         Subject : 'Mail from '+name,
