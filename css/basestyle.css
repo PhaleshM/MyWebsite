@@ -4,10 +4,14 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    position: relative;
     padding: 0px;
     background-color: rgb(36, 36, 37);
     overflow-x: hidden;
     overflow-y: visible;
+}
+main{
+    position: relative;
 }
 header{
     position: sticky;
@@ -61,13 +65,13 @@ header{
     display:none;
 }
 .overmenu{
-    display: none;
+    display: initial;
     background: rgb(36, 36, 37,0.97);
     position: absolute;
-    right: 0;
-    height: 100%;
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
+    top: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
     font-family: 'Montserrat', sans-serif;
     font-style: italic;
     z-index: 1000;
@@ -78,6 +82,7 @@ p{
 .over-opt{
     color: white;
     padding: 5px 40px;
+    margin-top: 30px;
 }
 .over-opt a{
     font-size: 35px;
@@ -85,12 +90,10 @@ p{
     z-index: 1001;
 }
 #slide-in{
-    display: initial;
     animation: slide-in 0.5s forwards ;
     -webkit-animation: slide-in 0.5s forwards ;
 }
 #slide-out{
-    display: initial;
     animation: slide-out 0.5s forwards ;
     -webkit-animation: slide-out 0.5s forwards ;
 }
@@ -212,15 +215,7 @@ form input,textarea{
     border:none;
     border-radius: 4px;
 }
-/* .requiredField {
-    display: none;
-}
-.form-control {
-    margin: 15px 4px;
-}
-.textinput::placeholder{
-    content: Name;
-} */
+
 .email .contact{
     font-size: 20px;
     padding:5px 8px;
@@ -331,7 +326,7 @@ hr{
 }
 @keyframes slide-in{
     0%{
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
     100% {
         transform: translateX(0%);
@@ -342,6 +337,6 @@ hr{
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
 }
