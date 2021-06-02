@@ -67,9 +67,12 @@ header{
 .overmenu{
     display: initial;
     background: rgb(36, 36, 37,0.97);
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 90px;
     height: 100vh;
+    /* border-radius: 15px; */
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 9px rgb(44, 44, 46) ;
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
     font-family: 'Montserrat', sans-serif;
